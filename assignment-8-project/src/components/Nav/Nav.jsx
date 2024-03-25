@@ -17,7 +17,7 @@ const Nav = () => {
 
           </ul>
         </div>
-        <a className=" text-xl lg:text-2xl font-bold gap-x-0">B<span className="text-blue-500">oo</span>k Hub</a>
+        <a className=" text-xl lg:text-2xl font-bold gap-x-0">B<span className="text-blue-500">oo</span>k Mania</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="flex text-xl font-semibold gap-x-5 gap-y-5 py-2">
