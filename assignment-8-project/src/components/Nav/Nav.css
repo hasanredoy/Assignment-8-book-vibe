@@ -1,0 +1,8 @@
+.active{
+  background-color: rgb(235, 210, 250);
+  border: 1px solid rgb(70, 0, 128);
+  border-radius: 10px;
+  padding: 2px 9px;
+  transition: 9ms;
+  color: rgba(100, 18, 0, 0.689);
+}
