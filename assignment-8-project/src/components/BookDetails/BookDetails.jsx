@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { saveRead, saveWishList } from "../utility/storage";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const BookDetails = () => {
   const { id } = useParams()
   const [books, setBooks] = useState([])
-  const [newBooks, setNewBooks] = useState([])
+  const [toggle, setToggle] = useState(false)
   useEffect(() => {
     fetch('../../bookData.json')
       .then(res => res.json())
@@ -13,8 +16,13 @@ const BookDetails = () => {
   }, [])
   const handleRead=(id)=>{
      saveRead(id)
+     setToggle(true)
   }
   const handleWishlist=(id)=>{
+    if(toggle){
+      toast.error('You Have already Read This Book')
+      return
+    }
      saveWishList(id)
   }
 

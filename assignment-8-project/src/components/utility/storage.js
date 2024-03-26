@@ -1,3 +1,5 @@
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export const getStorage =(param)=>{
   const getLS = localStorage.getItem(param)
   if(getLS){
@@ -11,10 +13,11 @@ export const saveRead = (id)=>{
   const newLs = getLS.find(LSid => LSid.bookId === id.bookId)
   if(!newLs){
     getLS.push(id)
+    toast.success(' Book Added Successfully to Read List')
     localStorage.setItem('read', JSON.stringify(getLS))
   }
   else{
-    alert('exist')
+    toast.error('Already Exist in Read list')
     return
   }
 }
@@ -23,11 +26,11 @@ export const saveWishList = (id)=>{
   const newLs = getLS.find(LSid => LSid.bookId === id.bookId)
   if(!newLs){
     getLS.push(id)
-    
+    toast.success(' Book Added Successfully to Wishlist')
     localStorage.setItem('wishlist', JSON.stringify(getLS))
   }
   else{
-    alert('exist')
+    toast.error('Already Exist Wishlist')
     return
   }
 }
