@@ -1,25 +1,41 @@
-import { useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import Banner from "../banner/Banner";
-import { FaChevronDown } from "react-icons/fa";
-import { FaChevronUp } from "react-icons/fa";
+// import { FaChevronDown } from "react-icons/fa";
+// import { FaChevronUp } from "react-icons/fa";
 import { Link, Outlet } from "react-router-dom";
+export const stateContext = createContext([])
 import { getStorage } from "../utility/storage";
+
 const ListedBook = () => {
-  const [arrow, setArrow] = useState(false)
+  // const [arrow, setArrow] = useState(false)
   const [tab, setTab] = useState(true)
   const [read, setRead] = useState([])
   const [wishlist, setWishlist] = useState([])
-  
+  // const [rating, setRating] = useState([])
+  const [data, setData ]=useState([])
+  // const rating = read.map(red => red.rating)
+
+
+ 
    useEffect(()=>{
-    const read = getStorage('read')
-    setRead(read)
+    const Read = getStorage('read')
+    setRead(Read)
+    // setRating(Read)
+    setData(Read)
   const wishlist= getStorage('wishlist')
   setWishlist(wishlist)
    },[])
+
+
+   
   const objOfReadAndWish ={
-      read,
-      wishlist
+    read,
+    wishlist
   } 
+  // console.log(rating);
+
+
+  
   return (
     <div>
 
@@ -31,11 +47,15 @@ const ListedBook = () => {
 
       <div className=" flex justify-center">
         <details className="dropdown ">
-          <summary onClick={() => setArrow(!arrow)} className="m-1 btn bg-green-600 hover:bg-red-600 text-white">Sort By{arrow ? <FaChevronUp></FaChevronUp>:<FaChevronDown></FaChevronDown>} </summary>
+          <summary 
+          // onClick={() => setArrow(!arrow)}
+           className="m-1 btn bg-green-600 hover:bg-red-600 text-white">Sort By
+          {/* {arrow ? <FaChevronUp></FaChevronUp>:<FaChevronDown></FaChevronDown>}  */}
+          </summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-300 rounded-box w-40">
-            <li><a>Rating</a></li>
-            <li><a>Number of Page</a></li>
-            <li><a>Year Of Publish</a></li>
+            {/* <button className="btn" onClick={()=>handelSort('rating')}>Rating</button> */}
+            
+            {/* <li><a>Year Of Publish</a></li> */}
           </ul>
         </details>
       </div>
@@ -53,7 +73,9 @@ const ListedBook = () => {
         </Link>
       </div>
         <div className=" my-10 container mx-auto">
+        <stateContext.Provider value={[data , setData]}>
         <Outlet context={objOfReadAndWish}></Outlet>
+        </stateContext.Provider>
         </div>
         
     </div>

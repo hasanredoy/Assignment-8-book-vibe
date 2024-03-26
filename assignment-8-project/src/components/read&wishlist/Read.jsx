@@ -1,15 +1,45 @@
-import { Link, useOutletContext } from "react-router-dom";
+import {
+  Link,
+  useOutletContext
+} from "react-router-dom";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoPeopleOutline } from "react-icons/io5";
 import { IoDocumentTextOutline } from "react-icons/io5";
+import { useContext, useEffect } from "react";
+import { stateContext } from "../listedBooks/ListedBook";
+import { saveRead } from "../utility/storage";
 
 const Read = () => {
   const { read } = useOutletContext()
-  console.log(read);
+  // console.log(data);
+  const [data, setData] = useContext(stateContext)
+  // console.log(data);
+  // setData(data)
+
+  const handelSort = () => {}
+   useEffect(()=>{
+
+      // const newRating = read.sort((a, b) => parseFloat(a.totalPages) - parseFloat(b.totalPages))
+      const newRating = read.sort((a, b) => a.totalPages - b.totalPages)
+      
+      setData(newRating)
+      //  localStorage.clear()
+      //   else{ 
+      // if(prop === true){
+      // console.log(newRating);
+      // console.log(data);
+      // }
+      //     console.log('jgh');}
+   
+
+   },[]) 
+  
   return (
     <div className="  flex flex-col  gap-y-5 rounded-lg">
+      <button className="btn" onClick={() => handelSort()}>Number of Page</button>
+
       {
-        read.map(reading => <div key={reading.bookId} className="  bg-base-100 rounded-lg border border-gray-400 p-2">
+        data.map(reading => <div key={reading.bookId} className="  bg-base-100 rounded-lg border border-gray-400 p-2">
           <div className=" flex flex-col lg:flex-row  bg-base-200 rounded-lg">
             <div className=" rounded-lg shadow-2xl w-[96%] mx-auto lg:mx-0 lg:w-[20%] max-h-64">
               <img src={reading.image} className="w-64 h-64 mx-auto lg:mx-0 " />
@@ -34,23 +64,23 @@ const Read = () => {
               </div>
 
               <div>
-              <div className="flex  lg:flex-row gap-4 h-full items-center font-normal border-b border-gray-400 my-4 pb-2">
+                <div className="flex  lg:flex-row gap-4 h-full items-center font-normal border-b border-gray-400 my-4 pb-2">
                   <h3 className="flex gap-3 "><IoPeopleOutline className=" text-2xl"></IoPeopleOutline> Publisher: <span >{reading.publisher}</span></h3>
                   <h2 className="flex gap-3">
-                    <IoDocumentTextOutline className="text-2xl"></IoDocumentTextOutline> Pages: <span> {reading.totalPages}</span> 
+                    <IoDocumentTextOutline className="text-2xl"></IoDocumentTextOutline> Pages: <span> {reading.totalPages}</span>
                   </h2>
-                 
+
                 </div>
               </div>
               <div className=" flex flex-col lg:flex-row gap-5 w-full">
-              <button className="btn rounded-full px-3 bg-orange-200 text-orange-500 py-3 w-full lg:w-auto">Category: <span>{reading.category}</span></button>
-              <button className=" btn rounded-full px-3 bg-blue-200 text-blue-500 py-3 w-full lg:w-auto">Rating: {reading.rating}</button>
-              <Link to={`/bookDetails/${reading.bookId}`}>
-              <button className="btn btn-secondary rounded-full w-full">View Details</button></Link>
+                <button className="btn rounded-full px-3 bg-orange-200 text-orange-500 py-3 w-full lg:w-auto">Category: <span>{reading.category}</span></button>
+                <button className=" btn rounded-full px-3 bg-blue-200 text-blue-500 py-3 w-full lg:w-auto">Rating: {reading.rating}</button>
+                <Link to={`/bookDetails/${reading.bookId}`}>
+                  <button className="btn btn-secondary rounded-full w-full">View Details</button></Link>
               </div>
             </div>
           </div>
-        </div>) || ''
+        </div>) || ' '
       }
     </div>
   );
