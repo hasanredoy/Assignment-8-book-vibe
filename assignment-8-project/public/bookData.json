@@ -1,0 +1,80 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "The Sealed Nectar",
+    "author": "Safi-ur-Rahman al-Mubarakpuri",
+    "image": "https://i.postimg.cc/MKDTHvqK/image-1.jpg",
+    "review": "The Sealed Nectar is a comprehensive biography of the Prophet Muhammad (peace be upon him) written by Safi-ur-Rahman al-Mubarakpuri. It provides a detailed account of the life of the Prophet, from his birth in Mecca to his death in Medina, and covers various aspects of his life including his family background, early life, prophethood, struggles, and triumphs. Al-Mubarakpuri's meticulous research and scholarship make this book an invaluable resource for anyone seeking to learn more about the life and teachings of the Prophet Muhammad.",
+    "totalPages": 592,
+    "rating": 4.8,
+    "category": "Biography",
+    "tags": ["Prophet Muhammad", "Islamic History", "Biography"],
+    "publisher": "Darussalam Publishers",
+    "yearOfPublishing": 1979
+  },
+  {
+    "bookId": 2,
+    "bookName": "The Gardens of the Righteous",
+    "author": "Imam Nawawi",
+    "image": "https://i.postimg.cc/50NpcH4Y/image-2.jpg",
+    "review": "The Gardens of the Righteous, also known as Riyad al-Salihin, is a compilation of hadiths by Imam Nawawi, one of the most esteemed scholars of Islam. This book serves as a comprehensive guide to Islamic ethics, morality, and spirituality, drawing upon the teachings of the Prophet Muhammad (peace be upon him). Organized into chapters covering various aspects of daily life and worship, The Gardens of the Righteous offers practical advice and insights for Muslims seeking to live according to the teachings of Islam. With its timeless wisdom and relevance, this book continues to be a source of inspiration for believers worldwide.",
+    "totalPages": 672,
+    "rating": 4.9,
+    "category": "Hadith Compilation",
+    "tags": ["Islamic Ethics", "Spirituality", "Hadith"],
+    "publisher": "Dar al-Kutub al-Ilmiyyah",
+    "yearOfPublishing": 1258
+  },
+  {
+    "bookId": 3,
+    "bookName": "Muhammad: His Life Based on the Earliest Sources",
+    "author": "Martin Lings",
+    "image": "https://i.postimg.cc/638KWpzq/image-3.webp",
+    "review": "Muhammad: His Life Based on the Earliest Sources is a renowned biography of the Prophet Muhammad (peace be upon him) written by Martin Lings. Drawing from the earliest Islamic sources and historical records, Lings presents a vivid and authentic portrayal of the life and character of the Prophet. From his birth in Mecca to his prophethood, migration to Medina, and eventual triumph in Mecca, Lings provides valuable insights into the life and teachings of one of the most influential figures in history. With its engaging narrative style and meticulous research, this book offers readers a deeper understanding of the Prophet Muhammad's life and legacy.",
+    "totalPages": 384,
+    "rating": 4.7,
+    "category": "Biography",
+    "tags": ["Prophet Muhammad", "Islamic History", "Biography"],
+    "publisher": "Islamic Texts Society",
+    "yearOfPublishing": 1983
+  },
+  {
+    "bookId": 4,
+    "bookName": "Al-Muwatta",
+    "author": "Imam Malik ibn Anas",
+    "image": "https://i.postimg.cc/KjNhQ389/image.jpg",
+    "review": "Al-Muwatta is one of the earliest and most important collections of hadiths compiled by Imam Malik ibn Anas, a prominent Islamic scholar from the Arab world. This seminal work covers various aspects of Islamic jurisprudence, ethics, and practices, providing a comprehensive guide to the teachings of the Prophet Muhammad (peace be upon him) as transmitted by the people of Medina. Imam Malik's meticulous compilation and organization of hadiths have made Al-Muwatta a foundational text in Islamic scholarship, and it continues to be studied and revered by Muslims worldwide.",
+    "totalPages": 720,
+    "rating": 4.9,
+    "category": "Hadith Compilation",
+    "tags": ["Hadith", "Islamic Jurisprudence", "Sunni Islam"],
+    "publisher": "Dar al-Kutub al-Ilmiyyah",
+    "yearOfPublishing": 1990
+  },
+  {
+    "bookId": 5,
+    "bookName": "Reclaim Your Heart",
+    "author": "Yasmin Mogahed",
+    "image": "https://i.postimg.cc/VvKmmZb9/image-5.webp",
+    "review": "Reclaim Your Heart is a powerful exploration of love, loss, and spiritual growth by Yasmin Mogahed. Drawing on Islamic teachings and personal anecdotes, Mogahed offers readers profound insights into the nature of the heart and its relationship with God. Through reflections on themes such as attachment, pain, and gratitude, she guides readers on a journey of self-discovery and healing. With its heartfelt prose and profound wisdom, Reclaim Your Heart is a transformative read that will resonate with anyone seeking solace and guidance in the midst of life's challenges.",
+    "totalPages": 192,
+    "rating": 4.9,
+    "category": "Self-Help",
+    "tags": ["Islamic Spirituality", "Self-Reflection", "Healing"],
+    "publisher": "FB Publishing",
+    "yearOfPublishing": 2012
+  },
+  {
+    "bookId": 6,
+    "bookName": "In the Shade of the Qur'an",
+    "author": "Sayyid Qutb",
+    "image": "https://i.postimg.cc/Hnkjwyw2/image-9.jpg",
+    "review": "In the Shade of the Qur'an is a monumental work of tafsir (Quranic interpretation) by Sayyid Qutb, a prominent Islamic scholar and thinker. Divided into 30 volumes corresponding to the chapters (surahs) of the Quran, this tafsir provides a comprehensive commentary on the divine message of the Quran, exploring its meanings, themes, and guidance for humanity. Sayyid Qutb's insightful analysis delves into the social, political, and moral dimensions of the Quran, offering readers a deeper understanding of its relevance to contemporary issues and challenges. With its profound insights and scholarly approach, In the Shade of the Qur'an remains a seminal work in the field of Islamic studies.",
+    "totalPages": "Approximately 6000",
+    "rating": 4.9,
+    "category": "Quranic Interpretation",
+    "tags": ["Tafsir", "Islamic Studies", "Quran Commentary"],
+    "publisher": "Dar al-Shorouk",
+    "yearOfPublishing": 1965
+  }
+]
