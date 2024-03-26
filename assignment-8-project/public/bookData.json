@@ -1,7 +1,7 @@
 [
   {
     "bookId": 1,
-    "bookName": "The Sealed Nectar",
+    "bookName": "The Sealed...",
     "author": "Safi-ur-Rahman al-Mubarakpuri",
     "image": "https://i.postimg.cc/MKDTHvqK/image-1.jpg",
     "review": "The Sealed Nectar is a comprehensive biography of the Prophet Muhammad (peace be upon him) written by Safi-ur-Rahman al-Mubarakpuri. It provides a detailed account of the life of the Prophet, from his birth in Mecca to his death in Medina, and covers various aspects of his life including his family background, early life, prophethood, struggles, and triumphs. Al-Mubarakpuri's meticulous research and scholarship make this book an invaluable resource for anyone seeking to learn more about the life and teachings of the Prophet Muhammad.",
@@ -14,7 +14,7 @@
   },
   {
     "bookId": 2,
-    "bookName": "The Gardens of the Righteous",
+    "bookName": "The Gardens...",
     "author": "Imam Nawawi",
     "image": "https://i.postimg.cc/50NpcH4Y/image-2.jpg",
     "review": "The Gardens of the Righteous, also known as Riyad al-Salihin, is a compilation of hadiths by Imam Nawawi, one of the most esteemed scholars of Islam. This book serves as a comprehensive guide to Islamic ethics, morality, and spirituality, drawing upon the teachings of the Prophet Muhammad (peace be upon him). Organized into chapters covering various aspects of daily life and worship, The Gardens of the Righteous offers practical advice and insights for Muslims seeking to live according to the teachings of Islam. With its timeless wisdom and relevance, this book continues to be a source of inspiration for believers worldwide.",
@@ -27,7 +27,7 @@
   },
   {
     "bookId": 3,
-    "bookName": "Muhammad: His Life Based on the Earliest Sources",
+    "bookName": "Muhammad(saw) ...",
     "author": "Martin Lings",
     "image": "https://i.postimg.cc/638KWpzq/image-3.webp",
     "review": "Muhammad: His Life Based on the Earliest Sources is a renowned biography of the Prophet Muhammad (peace be upon him) written by Martin Lings. Drawing from the earliest Islamic sources and historical records, Lings presents a vivid and authentic portrayal of the life and character of the Prophet. From his birth in Mecca to his prophethood, migration to Medina, and eventual triumph in Mecca, Lings provides valuable insights into the life and teachings of one of the most influential figures in history. With its engaging narrative style and meticulous research, this book offers readers a deeper understanding of the Prophet Muhammad's life and legacy.",
@@ -66,11 +66,11 @@
   },
   {
     "bookId": 6,
-    "bookName": "In the Shade of the Qur'an",
+    "bookName": "Shade of Qur'an",
     "author": "Sayyid Qutb",
     "image": "https://i.postimg.cc/Hnkjwyw2/image-9.jpg",
     "review": "In the Shade of the Qur'an is a monumental work of tafsir (Quranic interpretation) by Sayyid Qutb, a prominent Islamic scholar and thinker. Divided into 30 volumes corresponding to the chapters (surahs) of the Quran, this tafsir provides a comprehensive commentary on the divine message of the Quran, exploring its meanings, themes, and guidance for humanity. Sayyid Qutb's insightful analysis delves into the social, political, and moral dimensions of the Quran, offering readers a deeper understanding of its relevance to contemporary issues and challenges. With its profound insights and scholarly approach, In the Shade of the Qur'an remains a seminal work in the field of Islamic studies.",
-    "totalPages":  6000,
+    "totalPages":  600,
     "rating": 4.9,
     "category": "Quranic Interpretation",
     "tags": ["Tafsir", "Islamic Studies", "Quran Commentary"],

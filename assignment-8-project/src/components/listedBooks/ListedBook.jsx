@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Banner from "../banner/Banner";
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa";
@@ -7,9 +7,15 @@ import { getStorage } from "../utility/storage";
 const ListedBook = () => {
   const [arrow, setArrow] = useState(false)
   const [tab, setTab] = useState(true)
+  const [read, setRead] = useState([])
+  const [wishlist, setWishlist] = useState([])
   
-  const read = getStorage('read')
+   useEffect(()=>{
+    const read = getStorage('read')
+    setRead(read)
   const wishlist= getStorage('wishlist')
+  setWishlist(wishlist)
+   },[])
   const objOfReadAndWish ={
       read,
       wishlist
@@ -25,7 +31,7 @@ const ListedBook = () => {
 
       <div className=" flex justify-center">
         <details className="dropdown ">
-          <summary onClick={() => setArrow(!arrow)} className="m-1 btn bg-green-600 hover:bg-red-600 text-white">Sort By{arrow ? <FaChevronDown></FaChevronDown> : <FaChevronUp></FaChevronUp>} </summary>
+          <summary onClick={() => setArrow(!arrow)} className="m-1 btn bg-green-600 hover:bg-red-600 text-white">Sort By{arrow ? <FaChevronUp></FaChevronUp>:<FaChevronDown></FaChevronDown>} </summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-300 rounded-box w-40">
             <li><a>Rating</a></li>
             <li><a>Number of Page</a></li>
