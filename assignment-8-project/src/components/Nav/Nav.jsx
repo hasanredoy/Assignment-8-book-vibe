@@ -29,7 +29,7 @@ const Nav = () => {
         </ul>
       </div>
       <div className="navbar-end gap-x-3">
-        <a className="btn border hover:border-gray-400 bg-green-600 text-white text-base lg:text-base font-medium lg:font-bold hover:bg-sky-300 hidden lg:block">Sing Up</a>
+        <a className="btn border hover:border-gray-400 bg-green-600 text-white text-base lg:text-base font-medium lg:font-bold hover:bg-sky-300 hidden lg:flex">Sing Up</a>
         <a className="btn border hover:border-gray-800 bg-sky-600   text-white text-base lg:text-base font-medium lg:font-bold hover:bg-green-300">Sing In</a>
       </div>
     </div>

@@ -40,7 +40,7 @@ const Wishlist = () => {
   }
   return (
     <div className="  flex flex-col   rounded-lg">
-    <div className=" flex justify-end w-[95%]">
+    <div className=" flex justify-center lg:justify-end w-[95%]">
       <details className="dropdown mb-10 mt-0">
         <summary
           onClick={() => setArrow(!arrow)}
