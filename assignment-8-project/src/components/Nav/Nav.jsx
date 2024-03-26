@@ -21,16 +21,16 @@ const Nav = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="flex text-xl font-semibold gap-x-5 gap-y-5 py-2">
-          <NavLink className={"text-sky-400"} to={"/"}>Home</NavLink>
-          <NavLink className={"text-sky-400"} to={"/listedBooks"}>Listed Books</NavLink>
-          <NavLink className={"text-sky-400"} to={"/pagesToRead"}>Pages To Read</NavLink>
-          <NavLink className={"text-sky-400"} to={"/blogs"}>Blogs</NavLink>
-          <NavLink className={"text-sky-400"} to={"/about"}>About</NavLink>
+          <NavLink className={"text-purple-600"} to={"/"}>Home</NavLink>
+          <NavLink className={"text-purple-600"} to={"/listedBooks"}>Listed Books</NavLink>
+          <NavLink className={"text-purple-600"} to={"/pagesToRead"}>Pages To Read</NavLink>
+          <NavLink className={"text-purple-600"} to={"/blogs"}>Blogs</NavLink>
+          <NavLink className={"text-purple-600"} to={"/about"}>About</NavLink>
         </ul>
       </div>
       <div className="navbar-end gap-x-3">
-        <a className="btn border hover:border-gray-400 bg-green-600 text-white text-base lg:text-xl font-medium lg:font-bold hover:bg-sky-300">Sing Up</a>
-        <a className="btn border hover:border-gray-800 bg-sky-600   text-white text-base lg:text-xl font-medium lg:font-bold hover:bg-green-300">Sing In</a>
+        <a className="btn border hover:border-gray-400 bg-green-600 text-white text-base lg:text-base font-medium lg:font-bold hover:bg-sky-300">Sing Up</a>
+        <a className="btn border hover:border-gray-800 bg-sky-600   text-white text-base lg:text-base font-medium lg:font-bold hover:bg-green-300">Sing In</a>
       </div>
     </div>
   );

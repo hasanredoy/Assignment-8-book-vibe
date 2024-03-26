@@ -1,13 +1,12 @@
 import { createContext, useEffect, useState } from "react";
 import Banner from "../banner/Banner";
-// import { FaChevronDown } from "react-icons/fa";
-// import { FaChevronUp } from "react-icons/fa";
+
 import { Link, Outlet } from "react-router-dom";
 export const stateContext = createContext([])
 import { getStorage } from "../utility/storage";
 
 const ListedBook = () => {
-  // const [arrow, setArrow] = useState(false)
+  // 
   const [tab, setTab] = useState(true)
   const [read, setRead] = useState([])
   const [wishlist, setWishlist] = useState([])
@@ -45,21 +44,7 @@ const ListedBook = () => {
 
 
 
-      <div className=" flex justify-center">
-        <details className="dropdown ">
-          <summary 
-          // onClick={() => setArrow(!arrow)}
-           className="m-1 btn bg-green-600 hover:bg-red-600 text-white">Sort By
-          {/* {arrow ? <FaChevronUp></FaChevronUp>:<FaChevronDown></FaChevronDown>}  */}
-          </summary>
-          <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-300 rounded-box w-40">
-            {/* <button className="btn" onClick={()=>handelSort('rating')}>Rating</button> */}
-            
-            {/* <li><a>Year Of Publish</a></li> */}
-          </ul>
-        </details>
-      </div>
-
+     
       {/* tabs section  */}
 
       <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap lg:container lg:mx-auto ">
