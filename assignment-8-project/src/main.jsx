@@ -17,12 +17,14 @@ import BookDetails from './components/BookDetails/BookDetails.jsx';
 import Read from './components/read&wishlist/Read.jsx';
 import Wishlist from './components/read&wishlist/Wishlist.jsx';
 import React from 'react';
+import Error from './components/error/Error.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
+    errorElement:<Error></Error>,
     children:[
       {
         path:"/",
@@ -48,7 +50,8 @@ const router = createBrowserRouter([
       },
       {
         path:"/blogs",
-        element:<Blogs></Blogs>
+        element:<Blogs></Blogs>,
+        loader:()=> fetch(`https://dev.to/api/articles?per_page=15`)
       },
       {
         path:"/about",

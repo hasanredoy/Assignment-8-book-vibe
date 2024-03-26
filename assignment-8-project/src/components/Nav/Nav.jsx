@@ -21,11 +21,11 @@ const Nav = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="flex text-xl font-semibold gap-x-5 gap-y-5 py-2">
-          <NavLink className={"text-purple-600"} to={"/"}>Home</NavLink>
-          <NavLink className={"text-purple-600"} to={"/listedBooks"}>Listed Books</NavLink>
-          <NavLink className={"text-purple-600"} to={"/pagesToRead"}>Pages To Read</NavLink>
-          <NavLink className={"text-purple-600"} to={"/blogs"}>Blogs</NavLink>
-          <NavLink className={"text-purple-600"} to={"/about"}>About</NavLink>
+          <NavLink className={"text-gray-700"} to={"/"}>Home</NavLink>
+          <NavLink className={"text-gray-700"} to={"/listedBooks"}>Listed Books</NavLink>
+          <NavLink className={"text-gray-700"} to={"/pagesToRead"}>Pages To Read</NavLink>
+          <NavLink className={"text-gray-700"} to={"/blogs"}>Blogs</NavLink>
+          <NavLink className={"text-gray-700"} to={"/about"}>About</NavLink>
         </ul>
       </div>
       <div className="navbar-end gap-x-3">
