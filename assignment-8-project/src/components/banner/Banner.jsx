@@ -1,16 +1,16 @@
-
+import { NavLink } from "react-router-dom";
 const Banner = () => {
   return (
-    <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content flex-col lg:flex-row-reverse ">
+    <div className="hero  rounded-lg border border-gray-400 shadow-lg shadow-red-100 my-10 min-h-[500px] bg-white w-[95%] lg:container mx-auto ">
+      <div className="hero-content flex-col lg:flex-row-reverse gap-x-20">
        <div className=" h-full ">
-        <div className="overlay  bg-black opacity-50"></div>
-       <img src="https://i.postimg.cc/m2hkz7Tg/images.jpg" className="max-w-sm rounded-lg shadow-2xl h-[400px] z-50" />
+        <div className="hero-overlay  bg-black opacity-80"></div>
+       <img src="https://i.postimg.cc/m2hkz7Tg/images.jpg" className=" max-w-xs lg:max-w-sm rounded-lg  lg:h-[] z-50" />
        </div>
-        <div className=" max-w-lg">
-          <h1 className="text-5xl font-bold">Box Office News!</h1>
-          <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-          <button className="btn btn-primary">Get Started</button>
+        <div className=" max-w-lg space-y-5">
+          <h1 className=" mb-5 text-2xl lg:text-4xl font-bold">A Good Book Better Than 100 Fake Friends... </h1>
+       
+          <NavLink to={"/listedBooks"}><button className="btn hover:bg-slate-800 bg-[#be0a8be1] text-xl text-white font-bold">View The List</button></NavLink>
         </div>
       </div>
     </div>
