@@ -21,19 +21,19 @@ const Wishlist = () => {
   const handelSort = (sort) => {
     if (sort === 'page') {
       setToggle(!toggle)
-      const newRating = wishlist.sort((a, b) => a.totalPages - b.totalPages)
+      const newRating = wishlist.sort((a, b) =>  b.totalPages -a.totalPages )
 
       setNewData(newRating)
     }
     else if (sort === 'rating') {
       setToggle(!toggle)
-      const newRating = wishlist.sort((a, b) => a.rating - b.rating)
+      const newRating = wishlist.sort((a, b) =>b.rating - a.rating  )
 
       setNewData(newRating)
     }
    else if (sort === 'year') {
       setToggle(!toggle)
-      const newRating = wishlist.sort((a, b) => a.yearOfPublishing - b.yearOfPublishing)
+      const newRating = wishlist.sort((a, b) =>b.yearOfPublishing- a.yearOfPublishing )
 
       setNewData(newRating)
     }
@@ -60,7 +60,7 @@ const Wishlist = () => {
 
     <div className={toggle ? 'hidden' : 'block'}>
       {
-        newData.map(reading => <div key={reading.bookId} className="  bg-base-100 rounded-lg border border-gray-400 p-2 my-5">
+        newData.map(reading => <div key={reading.bookId} className="  bg-base-100 rounded-lg border border-gray-400 p-2 my-5  w-[95%] mx-auto">
           <div className=" flex flex-col lg:flex-row  bg-base-200 rounded-lg">
             <div className=" rounded-lg shadow-2xl w-[96%] mx-auto lg:mx-0 lg:w-[20%] max-h-64">
               <img src={reading.image} className="w-64 h-64 mx-auto lg:mx-0 " />
@@ -106,7 +106,7 @@ const Wishlist = () => {
     </div>
     <div className={toggle ? 'block' : 'hidden'}>
       {
-        wishlist.map(reading => <div key={reading.bookId} className="  bg-base-100 rounded-lg border border-gray-400 p-2 my-5">
+        wishlist.map(reading => <div key={reading.bookId} className="  bg-base-100 rounded-lg border border-gray-400 p-2 my-5  w-[95%] mx-auto">
           <div className=" flex flex-col lg:flex-row  bg-base-200 rounded-lg">
             <div className=" rounded-lg shadow-2xl w-[96%] mx-auto lg:mx-0 lg:w-[20%] max-h-64">
               <img src={reading.image} className="w-64 h-64 mx-auto lg:mx-0 " />
@@ -119,10 +119,10 @@ const Wishlist = () => {
                 <div className="flex gap-4 h-full items-center">
                   <h3 className=" ">Tag </h3>
                   <h2 className="  font-bold text-green-500 bg-[#ffffffa9] rounded-full w-auto px-2">
-                    #{reading.tags[2]}
+                    #{reading.tags[2]||''}
                   </h2>
                   <h2 className="  font-bold  text-green-500 bg-[#ffffffa9] rounded-full w-auto px-2">
-                    #{reading.tags[0]}
+                    #{reading.tags[0]||''}
                   </h2>
                 </div>
                 <div>

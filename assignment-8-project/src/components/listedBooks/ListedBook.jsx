@@ -47,17 +47,17 @@ const ListedBook = () => {
      
       {/* tabs section  */}
 
-      <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden ml-2 justify-start flex-nowrap lg:container lg:mx-auto ">
+      <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden ml-2 justify-start flex-nowrap w-[90%] lg:container lg:mx-auto ">
         <Link to={''} rel="noopener noreferrer" onClick={()=>setTab(true)}  className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tab?" border border-b-0":"border-b "}    rounded-t-lg border-gray-400 `}>
           
           <span className="font-semibold">Read Books</span>
         </Link>
-        <Link to={"wishlist"} rel="noopener noreferrer"  onClick={()=>setTab(false)} className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${!tab?"border-b-0 border ":"border-b"}    rounded-t-lg border-gray-400 `}>
+        <Link to={'wishlist'} rel="noopener noreferrer"  onClick={()=>setTab(false)} className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${!tab?"border-b-0 border ":"border-b"}    rounded-t-lg border-gray-400 `}>
           
           <span  className="font-semibold">Wishlist Books</span>
         </Link>
       </div>
-        <div className=" my-10 container w-[96%] mx-auto">
+        <div className=" my-10 container  mx-auto">
         <stateContext.Provider value={[data , setData]}>
         <Outlet context={objOfReadAndWish}></Outlet>
         </stateContext.Provider>

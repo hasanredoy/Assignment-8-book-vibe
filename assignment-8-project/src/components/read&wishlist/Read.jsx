@@ -22,19 +22,19 @@ const Read = () => {
   const handelSort = (sort) => {
     if (sort === 'page') {
       setToggle(!toggle)
-      const newRating = data.sort((a, b) => a.totalPages - b.totalPages)
+      const newRating = data.sort((a, b) =>  b.totalPages - a.totalPages)
 
       setNewData(newRating)
     }
     else if (sort === 'rating') {
       setToggle(!toggle)
-      const newRating = data.sort((a, b) => a.rating - b.rating)
+      const newRating = data.sort((a, b) => b.rating - a.rating )
 
       setNewData(newRating)
     }
    else if (sort === 'year') {
       setToggle(!toggle)
-      const newRating = data.sort((a, b) => a.yearOfPublishing - b.yearOfPublishing)
+      const newRating = data.sort((a, b) =>  b.yearOfPublishing -a.yearOfPublishing)
 
       setNewData(newRating)
     }
@@ -63,13 +63,13 @@ const Read = () => {
 
       <div className={toggle ? 'hidden' : 'block'}>
         {
-          newData.map(reading => <div key={reading.bookId} className="  bg-base-100 rounded-lg border border-gray-400 p-2 my-5">
+          newData.map(reading => <div key={reading.bookId} className="  bg-base-100 rounded-lg border border-gray-400 p-2 my-5  w-[95%] mx-auto">
             <div className=" flex flex-col lg:flex-row  bg-base-200 rounded-lg">
-              <div className=" rounded-lg shadow-2xl w-[96%] mx-auto lg:mx-0 lg:w-[20%] max-h-64">
+              <div className=" rounded-lg shadow-2xl w-[90%] mx-auto lg:mx-0 lg:w-[20%] max-h-64">
                 <img src={reading.image} className="w-64 h-64 mx-auto lg:mx-0 " />
 
               </div>
-              <div className="w-[96%] py-10 lg:py-0 lg:ml-[3%] mx-auto lg:mx-0 lg:w-[80%]">
+              <div className="w-[90%] py-10 lg:py-0 lg:ml-[2%] mx-auto lg:mx-0 lg:w-[80%]">
                 <h1 className="text-2xl font-bold">{reading.bookName}</h1>
                 <p className=" py-3 text-xl"><span className="font-bold ">By:</span> {reading.author}</p>
                 <div className="font-bold text-xl pb-4 flex flex-col lg:flex-row gap-5">
@@ -109,13 +109,13 @@ const Read = () => {
       </div>
       <div className={toggle ? 'block' : 'hidden'}>
         {
-          read.map(reading => <div key={reading.bookId} className="  bg-base-100 rounded-lg border border-gray-400 p-2 my-5">
+          read.map(reading => <div key={reading.bookId} className="  bg-base-100 rounded-lg border border-gray-400 p-2 my-5 w-[95%] mx-auto">
             <div className=" flex flex-col lg:flex-row  bg-base-200 rounded-lg">
-              <div className=" rounded-lg shadow-2xl w-[96%] mx-auto lg:mx-0 lg:w-[20%] max-h-64">
+              <div className=" rounded-lg shadow-2xl w-[90%] mx-auto lg:mx-0 lg:w-[20%] max-h-64">
                 <img src={reading.image} className="w-64 h-64 mx-auto lg:mx-0 " />
 
               </div>
-              <div className="w-[96%] py-10 lg:py-0 lg:ml-[3%] mx-auto lg:mx-0 lg:w-[80%]">
+              <div className="w-[90%] py-10 lg:py-0 lg:ml-[3%] mx-auto lg:mx-0 lg:w-[80%]">
                 <h1 className="text-2xl font-bold">{reading.bookName}</h1>
                 <p className=" py-3 text-xl"><span className="font-bold ">By:</span> {reading.author}</p>
                 <div className="font-bold text-xl pb-4 flex flex-col lg:flex-row gap-5">
